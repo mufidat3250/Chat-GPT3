@@ -40,7 +40,7 @@ const Navbar = () => {
         <button type="button">Sign Up</button>
       </div>
 
-      <div className="gpt3__navbar-menu"> 
+      <div className="gpt3__navbar-menu">
         {toggleMenu ? (
           <RiCloseLine
             color="#fff"
@@ -54,17 +54,19 @@ const Navbar = () => {
             onClick={() => setToggleMenu(true)}
           />
         )}
-
-        {toggleMenu && <div className="gpt3__navbar-menu_container scale-up-center">
-              <div className="gpt3__navbar-menu_container-links">
-                <MenuLinks/>
-              </div>
-              <div className="gpt3__navbar-menu_container-links-sign">
-                  <p>Sign In</p>
-                  <button type="button">Sign Up</button>
-              </div>  
-          </div>}
-      </div> 
+          
+        {toggleMenu && (
+          <div className="gpt3__navbar-menu_container scale-up-center">
+            <div className="gpt3__navbar-menu_container-links">
+              <MenuLinks />
+            </div>
+            <div className="gpt3__navbar-menu_container-links-sign">
+              <p>Sign In</p>
+              <button type="button">Sign Up</button>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

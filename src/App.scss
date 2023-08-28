@@ -17,6 +17,13 @@ a{
 .gradient__bg{
         background: linear-gradient(90deg, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);     
 }
+.gradient__text{
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 .scale-up-center {
 	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -50,12 +57,18 @@ a{
     margin: 4rem 6rem;
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:1054px) {
     .section__padding{
-        padding: 4rem 6rem;
+        padding: 4rem 2rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    .section__padding{
+        padding: 4rem 2rem;
     }
     .section__margin{
-        margin: 4rem 6rem;
+        margin: 4rem 2rem;
     }
 }
 
