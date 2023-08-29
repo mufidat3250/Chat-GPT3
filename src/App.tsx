@@ -3,6 +3,8 @@ import Navbar from './components/navbar'
 import { Header, Blog, Footer, Features, WhatsGpt, } from './container'
 import { Brand } from './components'
 import WhatGPT from './container/whatsGPT'
+import Posibility from './container/Posibility'
+import Cta from './components/cta'
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
         <Brand/>
         <WhatGPT/>
         <Features/>
+        <Posibility/>
+        <Cta/>
     </div>
   )
 }
